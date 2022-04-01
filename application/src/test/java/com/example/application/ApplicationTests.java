@@ -13,7 +13,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = {"httpbin=http://localhost:${wiremock.server.port}"})
 @AutoConfigureWireMock(port = 0)
-@EnableEurekaClient
 class ApplicationTests {
 
     @Autowired
