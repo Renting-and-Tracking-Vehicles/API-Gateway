@@ -18,7 +18,7 @@ class ApplicationTests {
     @Autowired
     private WebTestClient webClient;
 
-    @Test
+    /*@Test
     void contextLoads() throws Exception {
         //Stubs
         stubFor(get(urlEqualTo("/get"))
@@ -45,6 +45,6 @@ class ApplicationTests {
                 .expectBody()
                 .consumeWith(
                         response -> assertThat(response.getResponseBody()).isEqualTo("fallback".getBytes()));
-    }
+    }*/
 
 }
