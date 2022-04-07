@@ -33,7 +33,7 @@ public class Application {
                                 .setFallbackUri("forward:/fallback")))
                         .uri(httpUri))
                 .route(p -> p.path("/users/**").uri("lb://user-service"))
-                .route(p -> p.path("/vehicle/**").uri("lb://vehicle-service"))
+                .route(p -> p.path("/vehicles/**").uri("lb://vehicle-service"))
                 .build();
     }
 
